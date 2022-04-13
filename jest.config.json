@@ -1,0 +1,8 @@
+{
+  "testRegex": ".*\\.test\\.(ts)$",
+  "transform": { "\\.[jt]sx?$": "ts-jest" },
+  "moduleFileExtensions": ["ts", "js"],
+  "coverageReporters": ["lcov", ["text", { "skipFull": true }]],
+  "verbose": true,
+  "collectCoverageFrom": ["**/*.{ts, js}", "!**/node_modules/**", "!**/vendor/**"]
+}
