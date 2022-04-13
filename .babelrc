@@ -1,0 +1,8 @@
+{
+  "all": true,
+  "plugins": ["istanbul"],
+  "include": ["src"],
+  "exclude": ["**/mock*", "**/*.test.ts"],
+  "sourceMaps": false,
+  "instrument": false
+}
