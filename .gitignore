@@ -3,4 +3,4 @@ build
 *.js
 *.map
 package-lock.json
-coverage/
+coverage
