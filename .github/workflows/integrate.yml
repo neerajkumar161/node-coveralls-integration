@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout Github Action@v2
         uses: actions/checkout@v2
-      - name: User NodeJS 12
+      - name: Use NodeJS 12
         uses: actions/setup-node@v1
         with:
           node-version: 12
