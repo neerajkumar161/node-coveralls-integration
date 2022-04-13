@@ -8,13 +8,21 @@ jobs:
   test_pull_request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout Github Action@v2
+        uses: actions/checkout@v2
+      - name: User NodeJS 12
+        uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn install
-      - run: yarn test
-      - name: Coveralls
+      - name: Install Dependencies
+        run: yarn install
+      - name: Run Unit Tests
+        id: run-unit-tests
+        run: yarn test
+      - name: Check for unit test failure
+        if: steps.run-unit-tests.outputs.status == 'failure'
+        run: exit 1
+      - name: Publish Coveralls Report
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
