@@ -2,5 +2,5 @@
   "testRegex": ".*\\.test\\.(ts)$",
   "transform": { "\\.[jt]sx?$": "ts-jest" },
   "moduleFileExtensions": ["ts", "js"],
-  "collectCoverageFrom": ["**/*.{ts, js}", "!**/node_modules/**", "!**/vendor/**"]
+  "collectCoverageFrom": ["**/*.ts", "!**/node_modules/**", "!**/vendor/**"]
 }
