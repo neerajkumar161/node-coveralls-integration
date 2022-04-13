@@ -4,5 +4,5 @@
   "moduleFileExtensions": ["ts", "js"],
   "coverageReporters": ["lcov", ["text", { "skipFull": true }]],
   "verbose": true,
-  "collectCoverageFrom": ["**/*.{ts, js}", "!**/node_modules/**", "!**/vendor/**"]
+  "collectCoverageFrom": ["./src/*/*.ts", "!**/node_modules/**"]
 }

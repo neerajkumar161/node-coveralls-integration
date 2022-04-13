@@ -4,7 +4,6 @@
     "coverage": "npm run test"
   },
   "dependencies": {
-    "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@types/jest": "^27.4.1",
     "chai": "^4.3.6",
     "jest": "^27.5.1",
