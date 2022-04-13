@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest __tests__",
+    "test": "jest __tests__ --coverage",
     "coverage": "npm run test"
   },
   "dependencies": {
