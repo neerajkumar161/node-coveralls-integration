@@ -1,17 +1,17 @@
+
 {
   "scripts": {
     "test": "jest __tests__ --coverage",
     "coverage": "npm run test"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.6.3",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@types/jest": "^27.4.1",
     "babel-plugin-istanbul": "^6.1.1",
     "chai": "^4.3.6",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4"
-  },
-  "devDependencies": {
-    "typescript": "^4.6.3"
   }
 }
